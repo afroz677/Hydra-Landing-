@@ -1,0 +1,156 @@
+/* index.css */
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Replace with your preferred font */
+  background-color: #1e1e2f; /* Default dark background */
+  color: #ffffff; /* Default light text color */
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Global Styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Section Styling */
+section {
+  padding: 80px 20px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.section-description {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #d1d1e0;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #29293d;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #a78bfa; /* Accent color */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #a78bfa; /* Accent color */
+}
+
+/* Footer */
+footer {
+  background-color: #29293d;
+  padding: 20px;
+  text-align: center;
+  color: #d1d1e0;
+  font-size: 14px;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #a78bfa;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #7c66d3;
+}
+
+.btn:active {
+  background-color: #5b4ab2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}

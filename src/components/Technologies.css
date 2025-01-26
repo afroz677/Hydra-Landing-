@@ -1,0 +1,77 @@
+/* Technologies.css */
+.technologies {
+  padding: 60px 40px;
+  background-color: #29293d; /* Dark background for contrast */
+  color: #ffffff;
+  text-align: center;
+}
+
+.technologies .section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.technologies .section-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #d1d1e0;
+  margin-bottom: 50px;
+}
+
+.technologies .tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.technologies .tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.technologies .tech-item:hover {
+  transform: translateY(-10px);
+}
+
+.technologies .tech-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+.technologies .tech-item img:hover {
+  filter: brightness(1.1);
+}
+
+.technologies .tech-item p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .technologies {
+    padding: 40px 20px;
+  }
+
+  .technologies .section-title {
+    font-size: 28px;
+  }
+
+  .technologies .section-description {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,302 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e1e2e;
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #282842;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.header nav ul li {
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.header nav ul li:hover {
+  color: #8f76ff;
+}
+
+.header .buttons button {
+  background-color: #8f76ff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.header .buttons button:hover {
+  background-color: #6a54cc;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0;
+  background: linear-gradient(145deg, #2a2a44, #1e1e2e);
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  color: #8f76ff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  background-color: #8f76ff;
+  border-radius: 5px;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.hero-content button:hover {
+  background-color: #6a54cc;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.about img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Why Build Section */
+.why-build {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.why-build h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.why-build .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.why-build .card {
+  background-color: #282842;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.why-build .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.why-build .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.why-build .card p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Technologies Section */
+.technologies {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.technologies h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.technologies .logos img {
+  max-width: 100px;
+  margin: 0 20px;
+  transition: transform 0.3s;
+}
+
+.technologies .logos img:hover {
+  transform: scale(1.1);
+}
+
+/* How We Build Section */
+.how-we-build {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.how-we-build h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.how-we-build .steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.how-we-build .step {
+  background-color: #282842;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.how-we-build .step h3 {
+  font-size: 2rem;
+  color: #8f76ff;
+  margin-bottom: 10px;
+}
+
+.how-we-build .step p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Join Section */
+.join {
+  background-color: #282842;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.join h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.join form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.join form input,
+.join form textarea {
+  background-color: #1e1e2e;
+  border: 1px solid #8f76ff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.join form button {
+  background-color: #8f76ff;
+  color: #fff;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.join form button:hover {
+  background-color: #6a54cc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e1e2e;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #aaa;
+}

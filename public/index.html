@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydra VR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1e1e30;
+      color: #fff;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #1e1e30;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #c3aaf5;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      cursor: pointer;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .buttons button {
+      background: transparent;
+      border: 1px solid #c3aaf5;
+      color: #c3aaf5;
+      padding: 8px 15px;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 100px;
+      background: linear-gradient(180deg, #1e1e30 0%, #282845 100%);
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      color: #fff;
+    }
+
+    .hero-text h1 span {
+      color: #c3aaf5;
+    }
+
+    .hero-text p {
+      margin: 20px 0;
+      line-height: 1.5;
+      color: #aaa;
+    }
+
+    .hero-text button {
+      background: #6f51d9;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .hero-image img {
+      border-radius: 20px;
+      width: 400px;
+    }
+
+    .about {
+      padding: 50px 100px;
+      background-color: #1e1e30;
+    }
+
+    .about-text {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      color: #fff;
+    }
+
+    .about-text p {
+      color: #aaa;
+    }
+
+    .about-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .about-details img {
+      border-radius: 20px;
+      width: 400px;
+    }
+
+    .about-info {
+      max-width: 50%;
+    }
+
+    .about-info h3 {
+      font-size: 24px;
+      color: #c3aaf5;
+    }
+
+    .about-info p {
+      margin: 20px 0;
+      line-height: 1.5;
+      color: #aaa;
+    }
+
+    .about-info button {
+      background: #6f51d9;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: space-around;
+      background-color: #282845;
+      padding: 30px 50px;
+      border-radius: 15px;
+      margin: 20px 100px;
+    }
+
+    .contact-info div {
+      text-align: center;
+    }
+
+    .contact-info div h3 {
+      font-size: 18px;
+      color: #c3aaf5;
+      margin-bottom: 10px;
+    }
+
+    .contact-info div p {
+      color: #aaa;
+    }
+
+    .why-build {
+      padding: 50px 100px;
+      background-color: #1e1e30;
+      text-align: center;
+    }
+
+    .why-build h2 {
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    .why-build .cards {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .why-build .card {
+      background-color: #282845;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      width: 200px;
+    }
+
+    .why-build .card img {
+      width: 100px;
+      margin-bottom: 15px;
+    }
+
+    .why-build .card h3 {
+      font-size: 18px;
+      color: #c3aaf5;
+      margin-bottom: 10px;
+    }
+
+    .technologies {
+      padding: 50px 100px;
+      background-color: #1e1e30;
+      text-align: center;
+    }
+
+    .technologies h2 {
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    .technologies img {
+      width: 100px;
+      margin: 0 15px;
+    }
+
+    .how-we-build {
+      padding: 50px 100px;
+      background-color: #1e1e30;
+    }
+
+    .how-we-build h2 {
+      font-size: 36px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .how-we-build .steps {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .how-we-build .step {
+      text-align: center;
+    }
+
+    .how-we-build .step h3 {
+      font-size: 24px;
+      color: #c3aaf5;
+      margin-bottom: 15px;
+    }
+
+    .join {
+      padding: 50px 100px;
+      background-color: #282845;
+      text-align: center;
+    }
+
+    .join h2 {
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    .join form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .join input, .join textarea {
+      width: 300px;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+
+    .join button {
+      background: #6f51d9;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">HYDRA</div>
+    <nav>
+      <ul>
+        <li>About</li>
+        <li>Services</li>
+        <li>Technologies</li>
+        <li>How To</li>
+      </ul>
+    </nav>
+    <div class="buttons">
+      <button>Contact Us</button>
+      <button>Join Hydra</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Dive Into The Depths <br> Of <span>Virtual Reality</span></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore nisi tincidunt eget. Lectus mauris eros in vitae.</p>
+      <button>Build Your World</button>
+    </div>
+    <div class="hero-image">
+      <img src="https://hydra-lovat.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FheroImage.acf1314a.jpeg&w=640&q=75" alt="Virtual Reality">
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-text">
+      <h2>Introduction to Hydra VR</h2>
+      <p>Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
+    </div>
+    <div class="about-details">
+      <img src="https://hydra-lovat.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fabout-image.71c124dc.jpeg&w=640&q=75" alt="Hydra VR">
+      <div class="about-info">
+        <h3>About Hydra VR</h3>
+        <p>Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet sed.</p>
+        <button>Let's Get In Touch</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-build">
+    <h2>Why Build With Hydra VR</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://hydra-lovat.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Feducation.946eba34.jpeg&w=256&q=75" alt="Icon">
+        <h3>Education</h3>
+        <p>Enhance learning experiences through immersive VR environments.</p>
+      </div>
+      <div class="card">
+        <img src="https://hydra-lovat.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsimulation.1abb46c2.jpeg&w=256&q=75" alt="Icon">
+        <h3>Simulation</h3>
+        <p>Create realistic simulations for training and skill development.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/100" alt="Icon">
+        <h3>Entertainment</h3>
+        <p>Deliver unparalleled entertainment and interactive experiences.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/100" alt="Icon">
+        <h3>Design</h3>
+        <p>Visualize and build concepts in a virtual 3D space.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="technologies">
+    <h2>Technologies & Hardware</h2>
+    <div>
+      <img src="https://hydra-lovat.vercel.app/_next/static/media/unreal.0d98c163.svg" alt="Unreal Engine">
+      <img src="https://hydra-lovat.vercel.app/_next/static/media/unity.1b90925b.svg" alt="Unity">
+      <img src="https://hydra-lovat.vercel.app/_next/static/media/oculus.1300c0ca.svg" alt="Oculus">
+      <img src="https://hydra-lovat.vercel.app/_next/static/media/vive.3a42fbdc.svg" alt="Vive">
+    </div>
+  </section>
+
+  <section class="how-we-build">
+    <h2>How We Build with Hydra VR</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>01</h3>
+        <p>Conceptualization and Idea Development</p>
+      </div>
+      <div class="step">
+        <h3>02</h3>
+        <p>3D Modeling and Environment Creation</p>
+      </div>
+      <div class="step">
+        <h3>03</h3>
+        <p>Testing and Optimization</p>
+      </div>
+      <div class="step">
+        <h3>04</h3>
+        <p>Final Deployment</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="join">
+    <h2>Join Hydra</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button>Submit</button>
+    </form>
+  </section>
+
+  <section class="contact-info">
+    <div>
+      <h3>Pay Us a Visit</h3>
+      <p>Union St, Seattle, WA 98101, United States</p>
+    </div>
+    <div>
+      <h3>Give Us a Call</h3>
+      <p>(110) 111-1010</p>
+    </div>
+    <div>
+      <h3>Send Us a Message</h3>
+      <p>Contact@HydraVTech.com</p>
+    </div>
+  </section>
+</body>
+</html>

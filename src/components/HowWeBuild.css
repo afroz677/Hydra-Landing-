@@ -1,0 +1,74 @@
+/* HowWeBuild.css */
+.how-we-build {
+  background: #1e1e2f;
+  padding: 60px 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.how-we-build h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.how-we-build p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #d1d1e0;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+}
+
+.how-we-build .steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.how-we-build .step {
+  flex: 1 1 200px;
+  max-width: 250px;
+  background: #29293d;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-we-build .step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.how-we-build .step .icon {
+  font-size: 40px;
+  color: #a78bfa; /* Purple accent color */
+  margin-bottom: 15px;
+}
+
+.how-we-build .step h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.how-we-build .step p {
+  font-size: 16px;
+  color: #d1d1e0;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .how-we-build .steps {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+}

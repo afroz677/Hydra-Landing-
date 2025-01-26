@@ -1,0 +1,88 @@
+/* Header.css */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(90deg, #1e1e2f, #29293d); /* Subtle gradient for the header */
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header .logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #a78bfa; /* Light purple accent color */
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  gap: 30px;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #a78bfa; /* Purple hover effect */
+}
+
+header .cta-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+header .cta-buttons .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #a78bfa;
+  border-radius: 30px;
+  background: transparent;
+  color: #a78bfa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+header .cta-buttons .btn:hover {
+  background-color: #a78bfa;
+  color: #ffffff;
+}
+
+header .cta-buttons .btn-primary {
+  background-color: #a78bfa;
+  color: #ffffff;
+  border: none;
+}
+
+header .cta-buttons .btn-primary:hover {
+  background-color: #7c66d3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  header .cta-buttons {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}

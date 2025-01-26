@@ -1,0 +1,72 @@
+/* WhyBuild.css */
+.why-build {
+  padding: 60px 40px;
+  background-color: #1e1e2f; /* Dark background */
+  color: #ffffff;
+  text-align: center;
+}
+
+.why-build .section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.why-build .features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.why-build .feature {
+  background-color: #29293d; /* Slightly lighter card background */
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-build .feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.why-build .feature img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a78bfa, #7c66d3); /* Icon background gradient */
+  padding: 10px;
+}
+
+.why-build .feature h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.why-build .feature p {
+  font-size: 16px;
+  color: #d1d1e0;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .why-build .features {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .why-build .feature {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}

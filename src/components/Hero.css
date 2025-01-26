@@ -1,0 +1,108 @@
+/* Hero.css */
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background: linear-gradient(180deg, #1e1e2f, #29293d); /* Dark gradient background */
+  color: #ffffff;
+  min-height: 80vh;
+}
+
+.hero .content {
+  max-width: 600px;
+}
+
+.hero .content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero .content h1 span {
+  color: #a78bfa; /* Highlighted word in purple */
+}
+
+.hero .content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #d1d1e0;
+}
+
+.hero .cta-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.hero .cta-buttons .btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero .cta-buttons .btn-primary {
+  background-color: #a78bfa;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero .cta-buttons .btn-primary:hover {
+  background-color: #7c66d3;
+}
+
+.hero .cta-buttons .btn-secondary {
+  background: transparent;
+  color: #a78bfa;
+  border: 1px solid #a78bfa;
+}
+
+.hero .cta-buttons .btn-secondary:hover {
+  background-color: #a78bfa;
+  color: #ffffff;
+}
+
+.hero .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero .content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero .image img {
+    width: 80%;
+  }
+
+  .hero .cta-buttons {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+}
